@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Timer | Counter</title>
+        <link rel="stylesheet" href="./Style.css">
+    </head>
+    <body>
+        <div class="Timer">
+            <div class="innerDivTimer">
+                <div class="timerName"><button class="mainButton" onclick="inputingTimer()">Timer</button>
+                </div>
+                <div class="settime">
+                <div class="hours"></div>
+                <div class="spaces">:</div>
+                <div class="minutes"></div>
+                <div class="spaces">:</div>
+                <div class="seconds"></div>
+                </div>
+            </div>
+            <div class="lastDivTimer">
+                <div class="innerLastDiv">
+                <div class="startButton">
+                    <button class="button1" onclick="startingTimer()" id="startColors">Start</button>
+                </div>
+                <div class="resetButton">
+                    <button class="button1" onclick="resetingTimer()" id="resetColors">Reset</button>
+                </div>
+                <div class="stopButton">
+                    <button class="button1" onclick="stopingTimer()" id="stopColos">Stop</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="Counter">
+            <div class="innerDivCounter">
+                <div class="timerName"><button class="mainButton" onclick="inputCounter()">Counter</button></div>
+                <div class="settime">
+                    <div class="hours"></div>
+                    <div class="spaces">:</div>
+                    <div class="minutes"></div>
+                    <div class="spaces">:</div>
+                    <div class="seconds"></div>
+                    </div>
+            </div>
+            <div class="lastDivCounter">
+                <div class="innerLastDiv">
+                    <div class="startButton">
+                        <button class="button1" id="startColors" onclick="startingCounter()">Start</button>
+                    </div>
+                    <div class="resetButton">
+                        <button class="button1" id="resetColors" onclick="resetingCounter()">Reset</button>
+                    </div>
+                    <div class="stopButton">
+                        <button class="button1" id="stopColos" onclick="stoptingCounter()">Stop</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./JavaScript.js"></script>
+    </body>
+</html>
