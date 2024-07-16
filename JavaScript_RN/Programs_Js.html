@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script>
+            function Grade(grade){
+            document.write("Grades :");
+            if(grade>90 && grade<=100){
+                grade='A';
+            }
+            else if(grade>80 && grade<=90){
+                grade='B';
+            }
+            else if(grade>70 && grade<=80){
+                grade='C';
+            }
+            else if(grade>60 && grade<=70){
+                grade='D';
+            }
+            else {
+                grade='Fail';
+            }
+            return grade;
+
+        } 
+        function areaTriangle(a,b,c){
+            console.log("Area of Triangle: ");
+            var s;
+            s=(a+b+c)/2;
+            console.log(s);
+            var area;
+            area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            return area;
+        }
+        function Roots(a,b,c){
+            console.log("Root: ");
+            var r1;
+            r1=((-b)+Math.sqrt((b**2)+(4*a*c))/(2*a));
+            return r1;
+        }
+        var grade=window.prompt("Enter your marks: ");
+        var a=window.parseInt(prompt("Enter a Value"));
+        var b=window.parseInt(prompt("Enter b Value"));
+        var c=window.parseInt(prompt("Enter c Value"));
+        console.log(Grade(grade)); 
+        console.log(areaTriangle(a,b,c));
+        console.log(Roots(a,b,c));
+
+        </script>
+    </head>
+</html>

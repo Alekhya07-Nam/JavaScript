@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Onchange | Onclick</title>
+        <script src="./OnChange&Onclick.js"></script>
+        <style>
+            body{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .div1{
+                width: 400px;
+                height: 500px;
+                background: linear-gradient(#E1E8F6,#410B75,#A03576);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div1">
+            <centre><h2>FORM</h2>
+            <br><br>
+        <form>
+            <label>First Name: </label>
+            <input type="text"  value= "" onchange="firstName(this.value)">
+            <br><br>
+            <label>Last Name: </label>
+            <input type="text" value= ""  onchange="lastName(this.value)">
+            <br><br>
+            </label>Moblie: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" value= ""  onchange="moblie(this.value)">
+            <br><br>
+            </label>email: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" value= ""  onchange="email(this.value)">
+            <br><br>
+            </label>Technology: </label>
+            <input type="text" value= ""  onchange="technology(this.value)">
+            <br><br>
+            <label>College: </label>
+            <select onchange="college(this.value)">
+                <option value="AEC">AEC</option>
+                <option value="AECT">AECT</option>
+                <option value="AEOC">AEOC</option>
+            </select>
+            <br><br>
+            <button onclick="submitData(event)">Submit</button>
+        </centre>
+        </form>
+    </div>
+    </body>
+</html>

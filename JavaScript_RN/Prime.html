@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Prime Number</title>
+        <script>
+            var a=parseInt(window.prompt("Enter A value: "))
+            var cnt=0
+            for(var i=0;i<=a;i++){
+                if(a%i==0){
+                    cnt+=1
+                }
+            }
+            if(cnt==2){
+                document.write("Prime");
+            }
+            else{
+                document.write("Not a Prime")
+            }
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+try {
+    {
+        let x=10;
+    }
+    console.log(x);
+}
+catch(err){
+    console.log(err);
+    console.log(err.name);
+    console.log(err.message);
+}
+finally{
+    console.log("Hii");
+}
+{
+try{
+    var x=window.prompt("Enter name: ")
+    if(x=='Akhi'){
+        throw "Sleepy";
+    }
+}
+catch(aki){
+    console.log(aki);
+}
+}
+
+</script>
+</head>
+</html>
